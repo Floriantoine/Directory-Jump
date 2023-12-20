@@ -13,7 +13,8 @@ Directory Jump est un script shell qui permet de naviguer rapidement et efficace
 ## Utilisation
 
 ```bash
-./directory_jump.sh [options]
+./dj.sh [options]
+./dj.sh [target]
 ```
 
 ### Options
@@ -27,16 +28,20 @@ Directory Jump est un script shell qui permet de naviguer rapidement et efficace
 
 ## Exemples
 
+```bash
+./dj.sh MyBestProject
+```
+
 Pour naviguer dans les répertoires avec une profondeur maximale de 2 :
 
 ```bash
-./directory_jump.sh -maxdepth 2
+./dj.sh -maxdepth 2
 ```
 
 Pour ouvrir le répertoire sélectionné dans un nouvel terminal :
 
 ```bash
-./directory_jump.sh -n
+./dj.sh -n
 ```
 
 ## Licence
