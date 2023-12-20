@@ -43,7 +43,6 @@ print_help() {
     echo "If neither -c nor -n is provided, the script will change the current terminal directory."
 }
 
-
 while [[ $# -gt 0 ]]; do
     case $1 in
         -maxdepth)
@@ -118,7 +117,7 @@ selected_dir_or_file=$(echo -e "$(get_history)\n$directories_and_files" | rofi -
 # Vérifie si l'utilisateur a annulé la sélection
 
 if [ -z "$selected_dir_or_file" ]; then
-   return
+   return 0
 fi
 
 # Ajoute le chemin complet du dossier sélectionné à l'historique
